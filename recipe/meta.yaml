@@ -23,13 +23,13 @@ requirements:
     - python
     - xtl >=0.6.9,<0.7
     - xtensor >=0.21.2,<0.22
-    - pybind11 >=2.4.3,<2.5
+    - pybind11 >=2.4.3,<3
     - numpy
   run:
     - python
     - {{ pin_compatible('xtl', max_pin='x.x') }}
     - {{ pin_compatible('xtensor', max_pin='x.x') }}
-    - {{ pin_compatible('pybind11', max_pin='x.x') }}
+    - {{ pin_compatible('pybind11', max_pin='x') }}
     - {{ pin_compatible('numpy') }}
 
 test:
